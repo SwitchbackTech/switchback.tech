@@ -36,7 +36,8 @@ export default function LandingPage() {
         <p className="text-xl mb-4">Learn more about me and my work</p>
         <div className="space-y-4 flex flex-col justify-center">
           <LinkItem
-            href="https://youtube.com"
+            href="https://www.youtube.com/@tylerdane-com"
+            target="_blank"
             className="flex items-center space-x-2"
           >
             <FaYoutube size="1.4em" />
@@ -48,7 +49,8 @@ export default function LandingPage() {
             </span>
           </LinkItem>
           <LinkItem
-            href="https://youtube.com"
+            href="https://www.compasscalendar.com/"
+            target="_blank"
             className="flex items-center space-x-2"
           >
             <FaCompass size="1.4em" />
@@ -61,7 +63,8 @@ export default function LandingPage() {
           </LinkItem>
 
           <LinkItem
-            href="https://youtube.com"
+            href="https://www.tylerdane.com/"
+            target="_blank"
             className="flex items-center space-x-2"
           >
             <FaPenNib size="1.4em" />
@@ -73,7 +76,8 @@ export default function LandingPage() {
             </span>
           </LinkItem>
           <LinkItem
-            href="https://youtube.com"
+            href="https://www.linkedin.com/in/tyler-dane/"
+            target="_blank"
             className="flex items-center space-x-2"
           >
             <TiSocialLinkedin size="1.4em" />
