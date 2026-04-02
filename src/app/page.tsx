@@ -15,9 +15,9 @@ export default function LandingPage() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-800 to-black text-white font-mono">
+    <div className="min-h-screen flex flex-col items-center justify-center text-warm-900">
       <div className="max-w-2xl mx-auto p-8 space-y-8 animate-fade-in h-56">
-        <h1 className="text-4xl font-bold mb-4">
+        <h1 className="text-4xl font-bold mb-4 text-warm-800">
           {mounted && (
             <Typewriter
               options={{
@@ -32,13 +32,15 @@ export default function LandingPage() {
           )}
         </h1>
       </div>
-      <div className="space-y-4 ">
-        <p className="text-xl mb-4">Learn more about me and my work</p>
+      <div className="space-y-4">
+        <p className="text-xl mb-4 text-warm-600">
+          Learn more about me and my work
+        </p>
         <div className="space-y-4 flex flex-col justify-center">
           <LinkItem
             href="https://www.youtube.com/@tylerdane-com"
             target="_blank"
-            className="flex items-center space-x-2"
+            className="flex items-center space-x-2 text-warm-700 transition-colors hover:text-warm-900"
           >
             <FaYoutube size="1.4em" />
             <u>
@@ -49,9 +51,9 @@ export default function LandingPage() {
             </span>
           </LinkItem>
           <LinkItem
-            href="https://www.compasscalendar.com/"
+            href="https://github.com/SwitchbackTech/compass"
             target="_blank"
-            className="flex items-center space-x-2"
+            className="flex items-center space-x-2 text-warm-700 transition-colors hover:text-warm-900"
           >
             <FaCompass size="1.4em" />
             <u>
@@ -63,29 +65,29 @@ export default function LandingPage() {
           </LinkItem>
 
           <LinkItem
-            href="https://www.tylerdane.com/"
+            href="https://newsletter.fullstack.zip/"
             target="_blank"
-            className="flex items-center space-x-2"
+            className="flex items-center space-x-2 text-warm-700 transition-colors hover:text-warm-900"
           >
             <FaPenNib size="1.4em" />
             <u>
               <span>Blog:</span>
             </u>
             <span>
-              <em>Lessons learned</em>
+              <em>Sane system design</em>
             </span>
           </LinkItem>
           <LinkItem
             href="https://www.linkedin.com/in/tyler-dane/"
             target="_blank"
-            className="flex items-center space-x-2"
+            className="flex items-center space-x-2 text-warm-700 transition-colors hover:text-warm-900"
           >
             <TiSocialLinkedin size="1.4em" />
             <u>
               <span>LinkedIn:</span>
             </u>
             <span>
-              <em>Condensed blogs</em>
+              <em>Humble brags</em>
             </span>
           </LinkItem>
         </div>

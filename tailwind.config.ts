@@ -8,9 +8,23 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-roboto-slab)", "ui-serif", "Georgia", "serif"],
+        mono: ["var(--font-roboto-mono)", "ui-monospace", "monospace"],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        warm: {
+          50: "#F3EEE2",
+          100: "#e7e2d8",
+          200: "#b4b1a8",
+          300: "#97938c",
+          400: "#7a7771",
+          500: "#5e5c57",
+          600: "#44423e",
+          700: "#2b2a27",
+          800: "#141412",
+          900: "#030303",
+        },
       },
     },
   },
