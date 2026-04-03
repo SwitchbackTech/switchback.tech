@@ -5,11 +5,13 @@ import "./globals.css";
 const robotoSlab = Roboto_Slab({
   subsets: ["latin"],
   variable: "--font-roboto-slab",
+  weight: ["400", "700"],
 });
 
 const robotoMono = Roboto_Mono({
   subsets: ["latin"],
   variable: "--font-roboto-mono",
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
@@ -25,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${robotoSlab.variable} ${robotoMono.variable} min-h-screen bg-warm-50 text-warm-900 antialiased font-sans`}
+        className={`${robotoSlab.variable} ${robotoMono.variable} min-h-screen bg-warm-50 text-warm-900 antialiased font-slab`}
       >
         {children}
       </body>

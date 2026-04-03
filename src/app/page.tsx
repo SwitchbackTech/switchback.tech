@@ -7,10 +7,19 @@ import { SiSubstack } from "react-icons/si";
 
 import { useState, useEffect } from "react";
 
-const linkRowClass =
-  "group flex items-center space-x-2 text-warm-700 transition-colors duration-200 hover:text-red-900";
+/** Accent #77756e — link hover and typewriter name highlights. */
+const accentClass = "text-[#77756e]";
 
-const linkLabelClass = "font-bold transition-[font-weight] duration-200 group-hover:font-extrabold";
+const linkRowClass =
+  "group flex items-center space-x-2 text-warm-700 transition-colors duration-200 hover:text-[#77756e]";
+
+const linkLabelClass =
+  "font-mono font-bold transition-[font-weight] duration-200 group-hover:font-extrabold";
+
+const typewriterStrings = [
+  `Hey, I'm <span class="${accentClass}">Tyler</span> Dane.`,
+  `<span class="${accentClass}">Switchback</span> is the LLC I use as a contract Software Engineer.`,
+];
 
 export default function LandingPage() {
   const [mounted, setMounted] = useState(false);
@@ -26,10 +35,7 @@ export default function LandingPage() {
           {mounted && (
             <Typewriter
               options={{
-                strings: [
-                  "Hey, I'm Tyler Dane.",
-                  "Switchback is the LLC I use as a contract Software Engineer.",
-                ],
+                strings: typewriterStrings,
                 autoStart: true,
                 loop: true,
               }}

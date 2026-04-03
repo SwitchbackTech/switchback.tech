@@ -9,8 +9,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-roboto-slab)", "ui-serif", "Georgia", "serif"],
+        /** Roboto Slab — primary UI text */
+        slab: ["var(--font-roboto-slab)", "ui-serif", "Georgia", "serif"],
+        /** Roboto Mono — monospace accents */
         mono: ["var(--font-roboto-mono)", "ui-monospace", "monospace"],
+        /** Alias of `slab` for Tailwind defaults that expect `sans` */
+        sans: ["var(--font-roboto-slab)", "ui-serif", "Georgia", "serif"],
       },
       colors: {
         warm: {
