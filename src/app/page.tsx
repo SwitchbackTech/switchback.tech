@@ -44,10 +44,23 @@ export default function LandingPage() {
           >
             <FaYoutube size="1.4em" />
             <u>
-              <span>YouTube:</span>
+              <span>@tylerdane-com</span>
             </u>
             <span>
-              <em>Mostly tech videos</em>
+              <em>Casual tech videos</em>
+            </span>
+          </LinkItem>
+          <LinkItem
+            href="https://www.youtube.com/@fullstack-zip"
+            target="_blank"
+            className="flex items-center space-x-2 text-warm-700 transition-colors hover:text-warm-900"
+          >
+            <FaYoutube size="1.4em" />
+            <u>
+              <span>@fullstack-zip</span>
+            </u>
+            <span>
+              <em>Hardcore tech videos</em>
             </span>
           </LinkItem>
           <LinkItem
