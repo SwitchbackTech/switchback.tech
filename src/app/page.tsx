@@ -2,10 +2,15 @@
 import Typewriter from "typewriter-effect";
 
 import LinkItem from "next/link";
-import { FaCompass, FaPenNib, FaYoutube } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { SiSubstack } from "react-icons/si";
 
 import { useState, useEffect } from "react";
-import { TiSocialLinkedin } from "react-icons/ti";
+
+const linkRowClass =
+  "group flex items-center space-x-2 text-warm-700 transition-colors duration-200 hover:text-red-900";
+
+const linkLabelClass = "font-bold transition-[font-weight] duration-200 group-hover:font-extrabold";
 
 export default function LandingPage() {
   const [mounted, setMounted] = useState(false);
@@ -40,68 +45,48 @@ export default function LandingPage() {
           <LinkItem
             href="https://www.youtube.com/@tylerdane-com"
             target="_blank"
-            className="flex items-center space-x-2 text-warm-700 transition-colors hover:text-warm-900"
+            className={linkRowClass}
           >
             <FaYoutube size="1.4em" />
-            <u>
-              <span>@tylerdane-com</span>
-            </u>
-            <span>
-              <em>Casual tech videos</em>
-            </span>
+            <span className={linkLabelClass}>@tylerdane-com • </span>
+            <span>Casual tech videos</span>
           </LinkItem>
           <LinkItem
             href="https://www.youtube.com/@fullstack-zip"
             target="_blank"
-            className="flex items-center space-x-2 text-warm-700 transition-colors hover:text-warm-900"
+            className={linkRowClass}
           >
             <FaYoutube size="1.4em" />
-            <u>
-              <span>@fullstack-zip</span>
-            </u>
-            <span>
-              <em>Hardcore tech videos</em>
-            </span>
+            <span className={linkLabelClass}>@fullstack-zip • </span>
+            <span>Hardcore tech videos</span>
           </LinkItem>
           <LinkItem
             href="https://github.com/SwitchbackTech/compass"
             target="_blank"
-            className="flex items-center space-x-2 text-warm-700 transition-colors hover:text-warm-900"
+            className={linkRowClass}
           >
-            <FaCompass size="1.4em" />
-            <u>
-              <span>Compass:</span>
-            </u>
-            <span>
-              <em>My calendar app</em>
-            </span>
+            <FaGithub size="1.4em" />
+            <span className={linkLabelClass}>Compass • </span>
+            <span>My calendar app</span>
           </LinkItem>
 
           <LinkItem
             href="https://newsletter.fullstack.zip/"
             target="_blank"
-            className="flex items-center space-x-2 text-warm-700 transition-colors hover:text-warm-900"
+            className={linkRowClass}
           >
-            <FaPenNib size="1.4em" />
-            <u>
-              <span>Blog:</span>
-            </u>
-            <span>
-              <em>Sane system design</em>
-            </span>
+            <SiSubstack size="1.4em" />
+            <span className={linkLabelClass}>Blog • </span>
+            <span>Sane system design</span>
           </LinkItem>
           <LinkItem
             href="https://www.linkedin.com/in/tyler-dane/"
             target="_blank"
-            className="flex items-center space-x-2 text-warm-700 transition-colors hover:text-warm-900"
+            className={linkRowClass}
           >
-            <TiSocialLinkedin size="1.4em" />
-            <u>
-              <span>LinkedIn:</span>
-            </u>
-            <span>
-              <em>Humble brags</em>
-            </span>
+            <FaLinkedin size="1.55em" />
+            <span className={linkLabelClass}>LinkedIn • </span>
+            <span>Humble brags</span>
           </LinkItem>
         </div>
       </div>
